@@ -1,7 +1,9 @@
+from os import path
 import networkx as nx
 from networkx.readwrite import json_graph
 import json
 
+basepath = path.dirname(__file__)
 
 def pretty_print(dictionary):
     '''
@@ -9,23 +11,20 @@ def pretty_print(dictionary):
     '''
     print(dict_to_json_string(dictionary))
 
+
 def dict_to_json_string(dictionary):
     '''
     Returns a json string representation of the given dictionary.
     '''
     return json.dumps(dictionary, indent=4, default=lambda x: x.__dict__)
 
-def dict_to_json_obj(dictionary):
-    '''
-    Returns a json object representation of the given dictionary.
-    '''
-    return json.loads(dict_to_json_string(dictionary))
 
 def graph_to_dict(graph):
     '''
     Returns a dictionary representation of the given graph.
     '''
     return json_graph.node_link_data(graph)
+
 
 def d3_format(graph_dict):
     '''
@@ -36,28 +35,26 @@ def d3_format(graph_dict):
     graph_dict.pop("graph")
     return graph_dict
 
-def export_json(dictionary, filepath=None):
+def export_json(dictionary):
     '''
     Exports the given dictionary to a json file.
     '''
-    path=filepath
-    if not path:
-        path = r'C:\Users\Ricky\Documents\Programming\Python\D3\static\graph.json'
-    with open(path, 'w') as file:
+    filepath = path.abspath(path.join(basepath, "static", "json", "graph.json"))
+    with open(filepath, 'w') as file:
         json.dump(dictionary, file, indent=4, default=lambda x: x.__dict__)
 
 def random_graph(n):
     '''
-    Returns a random graph of n nodes.
+    Returns a random binomial graph of n nodes, with the calculated edge creation probability.
     '''
     p = 4.0 / 30
     return nx.erdos_renyi_graph(n, p)
 
-def connected_random_graph():
+
+def random_connected_graph(n):
     '''
-    Returns a random fully connected graph of n nodes containing the degree, degree parity, and Katz centrality of each node in the graph.
+    Returns a fully connected random binomial graph of n nodes containing the degree, degree parity, and Katz centrality of each node in the graph.
     '''
-    n = 10
     p = 4.0 / 30
     graph = nx.erdos_renyi_graph(n, p)
 
@@ -72,22 +69,3 @@ def connected_random_graph():
         graph.node[ix]['katz'] = katz
 
     return graph
-
-
-def render_graph(graph, dir=None):
-    '''
-    Renders the given graph to a matplotlib figure and exports the figure to a png file.
-    '''
-    import matplotlib.pyplot as plt
-    dir = r'C:\Users\Ricky\Documents\Programming\Python\NetworkX\output.png'
-    # plt.rcParams['font.family']='Uni Sans Light'
-    fig = plt.figure(figsize=(6, 4))
-    nx.draw(graph, with_labels=True)
-    fig.savefig(dir)
-
-
-if __name__ == "__main__":
-    G = connected_random_graph()
-    graph_dict = graph_to_dict(G)
-    pretty_print(graph_dict)
-    render_graph(G)

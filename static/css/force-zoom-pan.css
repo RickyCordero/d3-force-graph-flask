@@ -1,0 +1,14 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background: #eeeeee;
+    background: -moz-radial-gradient(center, ellipse cover, #eeeeee 0%, #eeeeee 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #eeeeee 0%, #eeeeee 100%);
+    background: radial-gradient(ellipse at center, #eeeeee 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=1);
+}
+
+text {
+    font-style: normal;
+    pointer-events: none;
+}

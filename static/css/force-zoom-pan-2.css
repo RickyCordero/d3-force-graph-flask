@@ -1,0 +1,17 @@
+*:focus {
+    outline: none
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+text {
+    font-style: normal;
+    pointer-events: none;
+}
+
+.tippy-popper {
+    font-style: italic;
+}
