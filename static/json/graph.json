@@ -1,6 +1,10 @@
 {
     "links": [
         {
+            "target": 8,
+            "source": 0
+        },
+        {
             "target": 11,
             "source": 0
         },
@@ -9,102 +13,163 @@
             "source": 0
         },
         {
-            "target": 6,
-            "source": 0
+            "target": 12,
+            "source": 1
         },
         {
-            "target": 7,
+            "target": 14,
             "source": 1
+        },
+        {
+            "target": 8,
+            "source": 2
+        },
+        {
+            "target": 13,
+            "source": 2
         },
         {
             "target": 14,
             "source": 2
         },
         {
-            "target": 9,
+            "target": 7,
+            "source": 2
+        },
+        {
+            "target": 10,
             "source": 3
         },
         {
-            "target": 11,
+            "target": 5,
             "source": 3
-        },
-        {
-            "target": 6,
-            "source": 3
-        },
-        {
-            "target": 12,
-            "source": 4
         },
         {
             "target": 7,
             "source": 4
         },
         {
-            "target": 12,
-            "source": 5
+            "target": 11,
+            "source": 6
+        },
+        {
+            "target": 14,
+            "source": 6
+        },
+        {
+            "target": 7,
+            "source": 6
+        },
+        {
+            "target": 10,
+            "source": 9
         },
         {
             "target": 12,
-            "source": 7
-        },
-        {
-            "target": 12,
-            "source": 8
-        },
-        {
-            "target": 12,
-            "source": 10
+            "source": 9
         },
         {
             "target": 13,
             "source": 10
+        },
+        {
+            "target": 14,
+            "source": 10
+        },
+        {
+            "target": 14,
+            "source": 13
         }
     ],
     "nodes": [
         {
+            "parity": 0,
+            "degree": 3,
+            "katz": 0.26540445690703407,
             "id": 0
         },
         {
+            "parity": 1,
+            "degree": 2,
+            "katz": 0.24091617076882016,
             "id": 1
         },
         {
+            "parity": 1,
+            "degree": 4,
+            "katz": 0.29545864192753,
             "id": 2
         },
         {
+            "parity": 1,
+            "degree": 2,
+            "katz": 0.23302067359251089,
             "id": 3
         },
         {
+            "parity": 0,
+            "degree": 1,
+            "katz": 0.20917723721169373,
             "id": 4
         },
         {
+            "parity": 0,
+            "degree": 1,
+            "katz": 0.20644362407095349,
             "id": 5
         },
         {
+            "parity": 0,
+            "degree": 3,
+            "katz": 0.26751735702520496,
             "id": 6
         },
         {
+            "parity": 0,
+            "degree": 3,
+            "katz": 0.2603568525464293,
             "id": 7
         },
         {
+            "parity": 1,
+            "degree": 2,
+            "katz": 0.23922784194838684,
             "id": 8
         },
         {
+            "parity": 1,
+            "degree": 2,
+            "katz": 0.23545416651484655,
             "id": 9
         },
         {
+            "parity": 1,
+            "degree": 4,
+            "katz": 0.29234766424467357,
             "id": 10
         },
         {
+            "parity": 1,
+            "degree": 2,
+            "katz": 0.23643371901341115,
             "id": 11
         },
         {
+            "parity": 1,
+            "degree": 2,
+            "katz": 0.2307785811251065,
             "id": 12
         },
         {
+            "parity": 0,
+            "degree": 3,
+            "katz": 0.27661891423991125,
             "id": 13
         },
         {
+            "parity": 1,
+            "degree": 6,
+            "katz": 0.3469677991549147,
             "id": 14
         }
     ]
