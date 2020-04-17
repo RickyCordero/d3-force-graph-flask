@@ -1,176 +1,180 @@
 {
-    "links": [
-        {
-            "target": 8,
-            "source": 0
-        },
-        {
-            "target": 11,
-            "source": 0
-        },
-        {
-            "target": 14,
-            "source": 0
-        },
-        {
-            "target": 12,
-            "source": 1
-        },
-        {
-            "target": 14,
-            "source": 1
-        },
-        {
-            "target": 8,
-            "source": 2
-        },
-        {
-            "target": 13,
-            "source": 2
-        },
-        {
-            "target": 14,
-            "source": 2
-        },
-        {
-            "target": 7,
-            "source": 2
-        },
-        {
-            "target": 10,
-            "source": 3
-        },
-        {
-            "target": 5,
-            "source": 3
-        },
-        {
-            "target": 7,
-            "source": 4
-        },
-        {
-            "target": 11,
-            "source": 6
-        },
-        {
-            "target": 14,
-            "source": 6
-        },
-        {
-            "target": 7,
-            "source": 6
-        },
-        {
-            "target": 10,
-            "source": 9
-        },
-        {
-            "target": 12,
-            "source": 9
-        },
-        {
-            "target": 13,
-            "source": 10
-        },
-        {
-            "target": 14,
-            "source": 10
-        },
-        {
-            "target": 14,
-            "source": 13
-        }
-    ],
     "nodes": [
         {
-            "parity": 0,
-            "degree": 3,
-            "katz": 0.26540445690703407,
+            "degree": 2,
+            "parity": 1,
+            "katz": 0.23022024142421144,
             "id": 0
         },
         {
-            "parity": 1,
             "degree": 2,
-            "katz": 0.24091617076882016,
+            "parity": 1,
+            "katz": 0.22533595005672388,
             "id": 1
         },
         {
-            "parity": 1,
             "degree": 4,
-            "katz": 0.29545864192753,
+            "parity": 1,
+            "katz": 0.2798683246481765,
             "id": 2
         },
         {
-            "parity": 1,
-            "degree": 2,
-            "katz": 0.23302067359251089,
+            "degree": 1,
+            "parity": 0,
+            "katz": 0.21050677268165363,
             "id": 3
         },
         {
-            "parity": 0,
-            "degree": 1,
-            "katz": 0.20917723721169373,
+            "degree": 4,
+            "parity": 1,
+            "katz": 0.2923962124132791,
             "id": 4
         },
         {
+            "degree": 3,
             "parity": 0,
-            "degree": 1,
-            "katz": 0.20644362407095349,
+            "katz": 0.27166914643512063,
             "id": 5
         },
         {
+            "degree": 5,
             "parity": 0,
-            "degree": 3,
-            "katz": 0.26751735702520496,
+            "katz": 0.3121488808717636,
             "id": 6
         },
         {
-            "parity": 0,
             "degree": 3,
-            "katz": 0.2603568525464293,
+            "parity": 0,
+            "katz": 0.2602783346508684,
             "id": 7
         },
         {
-            "parity": 1,
             "degree": 2,
-            "katz": 0.23922784194838684,
+            "parity": 1,
+            "katz": 0.23022024142421144,
             "id": 8
         },
         {
-            "parity": 1,
-            "degree": 2,
-            "katz": 0.23545416651484655,
+            "degree": 3,
+            "parity": 0,
+            "katz": 0.2668883218639469,
             "id": 9
         },
         {
-            "parity": 1,
             "degree": 4,
-            "katz": 0.29234766424467357,
+            "parity": 1,
+            "katz": 0.28394754288928176,
             "id": 10
         },
         {
-            "parity": 1,
             "degree": 2,
-            "katz": 0.23643371901341115,
+            "parity": 1,
+            "katz": 0.2392015075339581,
             "id": 11
         },
         {
-            "parity": 1,
-            "degree": 2,
-            "katz": 0.2307785811251065,
+            "degree": 1,
+            "parity": 0,
+            "katz": 0.20727872778182638,
             "id": 12
         },
         {
+            "degree": 1,
             "parity": 0,
-            "degree": 3,
-            "katz": 0.27661891423991125,
+            "katz": 0.20531973018371366,
             "id": 13
         },
         {
-            "parity": 1,
-            "degree": 6,
-            "katz": 0.3469677991549147,
+            "degree": 5,
+            "parity": 0,
+            "katz": 0.31922812731043415,
             "id": 14
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1
+        },
+        {
+            "source": 0,
+            "target": 10
+        },
+        {
+            "source": 1,
+            "target": 8
+        },
+        {
+            "source": 2,
+            "target": 4
+        },
+        {
+            "source": 2,
+            "target": 9
+        },
+        {
+            "source": 2,
+            "target": 11
+        },
+        {
+            "source": 2,
+            "target": 12
+        },
+        {
+            "source": 3,
+            "target": 6
+        },
+        {
+            "source": 4,
+            "target": 5
+        },
+        {
+            "source": 4,
+            "target": 7
+        },
+        {
+            "source": 4,
+            "target": 14
+        },
+        {
+            "source": 5,
+            "target": 6
+        },
+        {
+            "source": 5,
+            "target": 14
+        },
+        {
+            "source": 6,
+            "target": 7
+        },
+        {
+            "source": 6,
+            "target": 9
+        },
+        {
+            "source": 6,
+            "target": 14
+        },
+        {
+            "source": 7,
+            "target": 13
+        },
+        {
+            "source": 8,
+            "target": 10
+        },
+        {
+            "source": 9,
+            "target": 10
+        },
+        {
+            "source": 10,
+            "target": 14
+        },
+        {
+            "source": 11,
+            "target": 14
         }
     ]
 }

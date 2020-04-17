@@ -4,7 +4,15 @@ A simple collection of D3 (v3 & v4) force graph examples using Flask, NetworkX, 
 
 ## Getting Started
 
-Start the server
+Create and activate the environment in the root project folder:
+
+```
+virtualenv venv
+source venv/Scripts/activate
+pip install -r requirements.txt
+```
+
+## Start the server
 
 ```
 python app.py
