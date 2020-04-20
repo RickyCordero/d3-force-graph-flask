@@ -28,7 +28,7 @@ def graph_to_dict(graph):
 
 def d3_format(graph_dict):
     '''
-    Formats a graph dictionary to d3 format.
+    Formats a graph dictionary for d3 visualization
     '''
     graph_dict.pop("multigraph")
     graph_dict.pop("directed")

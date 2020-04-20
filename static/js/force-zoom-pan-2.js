@@ -109,6 +109,7 @@ function createForce() {
 createForce()
 
 function createJSON() {
+    // uses API route
     d3.json("/data", function (error, graph) {
         if (error) throw error;
         graph = graph.data;
